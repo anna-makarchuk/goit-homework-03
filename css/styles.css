@@ -24,55 +24,111 @@ body {
   color: var(--slate);
   background-color: var(--white);
 }
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+/* reset start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
   color: inherit;
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
+/* reset end */
 /* header */
 .main-logo {
   font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris);
+  margin-right: 76px;
 }
 .logo {
   color: var(--navy-blue);
 }
 .header-list {
+  display: flex;
+  gap: 40px;
+  margin-right: 332px;
   font-weight: 500;
   color: var(--navy-blue);
 }
 .address {
   font-style: normal;
 }
+.address-list {
+  display: flex;
+  gap: 40px;
+}
 .link:hover,
 .link:focus {
   color: var(--ocean);
 }
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.address-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 /* hero */
 .hero {
   color: var(--white);
   background-color: var(--navy-blue);
 }
 .hero-title {
+  display: block;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+  padding: 188px 315px 48px 315px;
 }
+
 .hero-btn {
   font-weight: 500;
   display: flex;
   align-items: center;
+  justify-content: center;
   letter-spacing: 0.04em;
   color: var(--white);
   background-color: var(--iris);
@@ -80,12 +136,22 @@ body {
   cursor: pointer;
   font-size: 16px;
   line-height: 1.5;
+  margin: 0 auto;
+  min-width: 169px;
+  min-height: 56px;
+  border-radius: 4px;
 }
 .hero-btn:hover {
   background-color: var(--ocean);
 }
 .hero-btn:focus {
   background-color: var(--ocean);
+}
+/* advantages section */
+.advantages-list {
+  display: flex;
+  padding: 120px 0px;
+  column-gap: 24px;
 }
 .advantages-title {
   display: none;
@@ -97,6 +163,7 @@ body {
   color: var(--navy-blue);
   letter-spacing: 0.02em;
 }
+/* What are we doing section */
 
 .section-title {
   font-weight: 700;
@@ -105,8 +172,19 @@ body {
   text-align: center;
   color: var(--navy-blue);
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
-
+.section-list {
+  display: flex;
+  column-gap: 24px;
+  padding-bottom: 120px;
+}
+/* Our Team section */
+.team-list {
+  display: flex;
+  column-gap: 24px;
+  padding-bottom: 120px;
+}
 .team {
   background-color: var(--cloud);
 }
@@ -118,7 +196,10 @@ body {
   color: var(--navy-blue);
   letter-spacing: 0.02em;
   text-align: center;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
+
 .team-items {
   background-color: var(--white);
 }
@@ -135,9 +216,19 @@ body {
 .footer-text {
   color: var(--cloud);
 }
+
 .footer-logo {
   color: var(--cloud);
   letter-spacing: 0.02em;
+}
+.last-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+  margin-top: 100px;
+}
+.footer-text {
+  padding-right: 864px;
+  padding-bottom: 100px;
 }
 /* portfolio */
 .portfolio-title {
@@ -158,6 +249,9 @@ body {
   font-family: inherit;
   cursor: pointer;
   line-height: 1.5;
+  padding: 12px 24px;
+  min-width: 69px;
+  min-height: 48px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -169,4 +263,20 @@ body {
   font-size: 20px;
   color: var(--navy-blue);
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.portfolio-list {
+  display: flex;
+  gap: 24px;
+  padding: 96px 270px 62px 270px;
+}
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  padding-bottom: 120px;
+}
+.portfolio-img {
+  margin-bottom: 32px;
 }
