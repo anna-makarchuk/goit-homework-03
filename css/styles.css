@@ -93,7 +93,6 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--cornflower);
 }
 .header-nav {
   display: flex;
@@ -108,6 +107,9 @@ img {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+.header {
+  border-bottom: 1px solid var(--cornflower);
 }
 
 /* hero */
@@ -186,7 +188,7 @@ img {
   gap: 24px;
 }
 .section {
-  padding-bottom: 120px;
+  padding-bottom: 120px 0;
 }
 /* Our Team section */
 .team-list {
