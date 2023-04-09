@@ -197,7 +197,7 @@ img {
 }
 .team {
   background-color: var(--cloud);
-  padding-bottom: 120px 0;
+  padding: 120px 0;
 }
 .team-title {
   font-weight: 700;
