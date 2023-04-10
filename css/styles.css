@@ -190,9 +190,9 @@ img {
   display: flex;
   gap: 24px;
 }
-/* .section {
+.doing-section {
   padding-bottom: 120px;
-} */
+}
 
 /* Our Team section */
 .team-list {
