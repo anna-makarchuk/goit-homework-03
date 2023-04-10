@@ -120,12 +120,15 @@ img {
 }
 .hero-title {
   display: block;
+  text-align: center;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   max-width: 496px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-btn {
@@ -187,9 +190,9 @@ img {
   display: flex;
   gap: 24px;
 }
-.section {
+/* .section {
   padding-bottom: 120px;
-}
+} */
 
 /* Our Team section */
 .team-list {
@@ -301,11 +304,13 @@ img {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  padding-bottom: 120px;
 }
 
 .application-name {
   padding: 32px 16px;
   border: 1px solid var(--cornflower);
   border-top: none;
+}
+.portfolio-text {
+  color: var(--slate);
 }
